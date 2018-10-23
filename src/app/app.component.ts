@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Task } from './models/task.models.ts'
 
 @Component({
   selector: 'to-do',
@@ -15,7 +16,5 @@ export class AppComponent {
 
   currentFocus: string = 'Angular Homework';
 
-  firstTask = {
-    description: "Finish weekend Angular homework for Epicodus course."
-  }
+  firstTask: Task = new Task("Finish weekend Angular homework for Epicodus course.");
 }
