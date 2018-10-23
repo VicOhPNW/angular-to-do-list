@@ -16,5 +16,9 @@ export class AppComponent {
 
   currentFocus: string = 'Angular Homework';
 
-  firstTask: Task = new Task("Finish weekend Angular homework for Epicodus course.");
+  tasks: Task[] = [
+    new Task('Finish weekend Angular homework for Epicodus course'),
+    new Task('Begin brainstorming possible JavaScript group projects'),
+    new Task('Add README file to last few Angular repos on GitHub')
+  ];
 }
